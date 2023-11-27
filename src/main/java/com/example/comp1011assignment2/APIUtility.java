@@ -13,7 +13,7 @@ public class APIUtility {
     public static APIResponse callAPI(String mangaTitle) throws IOException, InterruptedException {
         mangaTitle = mangaTitle.replaceAll(" ", "%20");
 
-        String uri = "https://api.mangadex.org/manga?limit=10&title=" + mangaTitle;
+        String uri = "https://api.mangadex.org/manga?limit=20&title=" + mangaTitle;
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(uri)).build();

@@ -9,7 +9,6 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-
 <AnchorPane prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment2.SearchMangaController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="900.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
@@ -21,22 +20,26 @@
             </Label>
             <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="800.0">
                <children>
-                  <TextField />
-                  <Button mnemonicParsing="false" text="Search" />
+                  <TextField fx:id="searchTextField" />
+                  <Button mnemonicParsing="false" onAction="#search" text="Search" />
                </children>
                <VBox.margin>
                   <Insets top="50.0" />
                </VBox.margin>
             </HBox>
-            <ListView prefHeight="406.0" prefWidth="640.0">
-               <padding>
-                  <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
-               </padding>
-               <VBox.margin>
-                  <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
-               </VBox.margin>
-            </ListView>
-            <Button mnemonicParsing="false" text="Get Details" />
+            <VBox fx:id="secondVbox" alignment="CENTER" prefHeight="500.0" prefWidth="800.0">
+               <children>
+                  <ListView fx:id="listView" prefHeight="406.0" prefWidth="640.0">
+                     <padding>
+                        <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                     </padding>
+                     <VBox.margin>
+                        <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+                     </VBox.margin>
+                  </ListView>
+                  <Button mnemonicParsing="false" onAction="#getDetails" text="Get Details" />
+               </children>
+            </VBox>
          </children>
       </VBox>
    </children>
