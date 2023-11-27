@@ -26,6 +26,12 @@ public class MangaData {
     }
     public String toString()
     {
-        return  String.format("%s-%s",getAttributes().getYear(),getAttributes().getTitle().getEn());
+        if(getAttributes().getYear() != 0){
+            return  String.format("%s - %s",getAttributes().getYear(),getAttributes().getTitle().getEn());
+        }
+        else{
+            return "No Year Given - " + getAttributes().getTitle().getEn();
+        }
+
     }
 }

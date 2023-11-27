@@ -9,13 +9,13 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<AnchorPane prefHeight="900.0" prefWidth="800.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment2.SearchMangaController">
+<AnchorPane prefHeight="900.0" prefWidth="800.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.comp1011assignment2.SearchMangaController">
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="900.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label text="Search For Your Favourite Manga">
+            <Label stylesheets="@style.css" text="Search For Your Favourite Manga">
                <VBox.margin>
-                  <Insets bottom="50.0" top="70.0" />
+                  <Insets bottom="50.0" top="130.0" />
                </VBox.margin>
             </Label>
             <HBox alignment="TOP_CENTER" prefHeight="40.0" prefWidth="800.0">
@@ -34,7 +34,7 @@
                         <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
                      </padding>
                      <VBox.margin>
-                        <Insets bottom="20.0" left="100.0" right="100.0" top="20.0" />
+                        <Insets bottom="20.0" left="80.0" right="80.0" top="20.0" />
                      </VBox.margin>
                   </ListView>
                   <Button mnemonicParsing="false" onAction="#getDetails" text="Get Details" />
