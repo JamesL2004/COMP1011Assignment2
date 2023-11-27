@@ -20,7 +20,8 @@ public class Main extends Application {
     public static void main(String[] args)
     {
         try {
-            APIUtility.callAPI("Demon Slayer");
+            APIResponse response = APIUtility.callAPI("Demon Slayer");
+            System.out.println(response.getResponse());
         } catch (IOException e) {
             throw new RuntimeException(e);
         } catch (InterruptedException e) {
