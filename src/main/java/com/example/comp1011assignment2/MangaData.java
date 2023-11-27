@@ -24,4 +24,8 @@ public class MangaData {
     public List<MangaRelationships> getRelationships() {
         return relationships;
     }
+    public String toString()
+    {
+        return  String.format("%s-%s",getAttributes().getYear(),getAttributes().getTitle().getEn());
+    }
 }
