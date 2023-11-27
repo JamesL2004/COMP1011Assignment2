@@ -1,6 +1,6 @@
 package com.example.comp1011assignment2;
 
-public class MangaDescription {
+public class MangaTagName {
     private String en;
 
     public String getEn() {

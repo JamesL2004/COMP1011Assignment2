@@ -1,13 +1,14 @@
 package com.example.comp1011assignment2;
 
-import java.util.ArrayList;
 import java.util.List;
 
-public class MangaData {
+public class MangaTag {
     private String id;
     private String type;
-    private MangaAttributes attributes;
-    private List<MangaRelationships> relationships;
+
+    private MangaTagAttributes attributes;
+
+    private List<MangaTagRelationships> relationships;
 
     public String getId() {
         return id;
@@ -17,11 +18,11 @@ public class MangaData {
         return type;
     }
 
-    public MangaAttributes getAttributes() {
+    public MangaTagAttributes getAttributes() {
         return attributes;
     }
 
-    public List<MangaRelationships> getRelationships() {
+    public List<MangaTagRelationships> getRelationships() {
         return relationships;
     }
 }

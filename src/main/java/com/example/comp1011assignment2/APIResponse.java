@@ -5,10 +5,10 @@ import java.util.ArrayList;
 public class APIResponse {
     private String result;
     private String response;
+    private ArrayList<MangaData> data;
     private int limit;
     private int offset;
     private int total;
-    private ArrayList<MangaData> data;
 
     public String getResult() {
         return result;

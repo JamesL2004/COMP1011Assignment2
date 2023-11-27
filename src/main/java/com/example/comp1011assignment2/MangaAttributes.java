@@ -1,22 +1,52 @@
 package com.example.comp1011assignment2;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class MangaAttributes {
-    private ArrayList<MangaTitle> title;
-    private ArrayList<MangaDescription> description;
+    private MangaTitle title;
+    private List<MangaAltTitle> altTitles;
+    private MangaDescription description;
+    private boolean isLocked;
+    private MangaLinks links;
+    private String originalLanguage;
     private String lastVolume;
     private String lastChapter;
     private String publicationDemographic;
     private String status;
     private int year;
+    private String contentRating;
+    private List<MangaTag> tags;
+    private String state;
+    private boolean chapterNumbersResetOnNewVolume;
+    private String createdAt;
+    private String updatedAt;
+    private int version;
+    private List<String> availableTranslatedLanguages;
+    private String latestUploadedChapter;
 
-    public ArrayList<MangaTitle> getTitle() {
+    public MangaTitle getTitle() {
         return title;
     }
 
-    public ArrayList<MangaDescription> getDescription() {
+    public List<MangaAltTitle> getAltTitles() {
+        return altTitles;
+    }
+
+    public MangaDescription getDescription() {
         return description;
+    }
+
+    public boolean isLocked() {
+        return isLocked;
+    }
+
+    public MangaLinks getLinks() {
+        return links;
+    }
+
+    public String getOriginalLanguage() {
+        return originalLanguage;
     }
 
     public String getLastVolume() {
@@ -37,5 +67,41 @@ public class MangaAttributes {
 
     public int getYear() {
         return year;
+    }
+
+    public String getContentRating() {
+        return contentRating;
+    }
+
+    public List<MangaTag> getTags() {
+        return tags;
+    }
+
+    public String getState() {
+        return state;
+    }
+
+    public boolean isChapterNumbersResetOnNewVolume() {
+        return chapterNumbersResetOnNewVolume;
+    }
+
+    public String getCreatedAt() {
+        return createdAt;
+    }
+
+    public String getUpdatedAt() {
+        return updatedAt;
+    }
+
+    public int getVersion() {
+        return version;
+    }
+
+    public List<String> getAvailableTranslatedLanguages() {
+        return availableTranslatedLanguages;
+    }
+
+    public String getLatestUploadedChapter() {
+        return latestUploadedChapter;
     }
 }
