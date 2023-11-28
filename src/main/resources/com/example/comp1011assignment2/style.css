@@ -6,7 +6,6 @@
 }
 .label{
     -fx-text-fill: #f4f4f4;
-    -fx-underline: 2px solid #f4f4f4;
     -fx-font: bold italic 25pt "Arial";
 }
 .list-view {
