@@ -13,7 +13,7 @@
    <children>
       <VBox alignment="TOP_CENTER" prefHeight="900.0" prefWidth="800.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
          <children>
-            <Label stylesheets="@style.css" text="Search For Your Favourite Manga">
+            <Label id="titleLabel" stylesheets="@style.css" text="Search For Your Favourite Manga">
                <VBox.margin>
                   <Insets bottom="50.0" top="130.0" />
                </VBox.margin>

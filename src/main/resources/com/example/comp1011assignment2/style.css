@@ -1,16 +1,26 @@
-@import url('https://fonts.googleapis.com/css2?family=Vina+Sans&display=swap');
 .root{
     -fx-font: bold italic 15pt "Arial";
     -fx-background-image: url("imgs/background-img.jpg_large");
     -fx-background-size: cover;
 }
-.label{
+#detailsRoot{
+    -fx-background-image: url("imgs/detailsbackground.jpg");
+}
+#titleLabel{
     -fx-text-fill: #f4f4f4;
     -fx-font: bold italic 25pt "Arial";
+}
+.label{
+    -fx-text-fill: #8A9093;
+    -fx-font: bold italic 18pt "Arial";
+}
+#smallTitleLabel{
+    -fx-text-fill: #8A9093;
+    -fx-font: bold italic 18pt "Arial";
 }
 .list-view {
     -fx-background-radius: 20px;
     -fx-border-radius: 20px;
     -fx-padding: 10px;
-    -fx-background-color: #e9e9e9;
+    -fx-background-color: #e4e4e4;
 }

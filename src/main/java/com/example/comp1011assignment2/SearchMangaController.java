@@ -24,6 +24,12 @@ public class SearchMangaController
     {
         secondVbox.setVisible(false);
     }
+    /* Creates a new MangaData object and then gets the id and transfers it to manga-details scene
+    *
+    * @param mangaChoice
+    * @param SceneChanger
+    *
+    * */
     @FXML
     void getDetails(ActionEvent event) throws IOException, InterruptedException {
         MangaData mangaChoice = listView.getSelectionModel().getSelectedItem();
@@ -31,11 +37,16 @@ public class SearchMangaController
             throw new IllegalArgumentException("You must choose a manga.");
         }
         else{
-            SceneChanger.changeScenes(event, "MangaDetailsView.fxml", mangaChoice.getId());
+            SceneChanger.changeScenes(event, "manga-details-view.fxml", mangaChoice.getId());
         }
 
     }
-
+    /*
+    * When the search button is pressed it will load a List of mangaData objects
+    * @param title
+    * @param apiResponse
+    * @param List of mangaData objects
+    * */
     @FXML
     void search(ActionEvent event) throws IOException, InterruptedException {
         listView.getItems().clear();

@@ -9,7 +9,17 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 
 public class APIUtility {
-
+    /* A method that gets a title and then builds a request using the url plus the title and then
+    * creates and response and passes the data into the APIResponse object.
+    *
+    * @param mangaTitle
+    * @param uri
+    * @param client
+    * @param httpRequest
+    * @param response
+    * @param gson
+    *
+    * */
     public static APIResponse callAPI(String mangaTitle) throws IOException, InterruptedException {
         mangaTitle = mangaTitle.replaceAll(" ", "%20");
 
@@ -23,6 +33,17 @@ public class APIUtility {
         Gson gson = new Gson();
         return gson.fromJson(response.body(), APIResponse.class);
     }
+    /* A method that gets an id and then builds a request using the url plus the title and then
+     * creates and response and passes the data into the MangaResponse object.
+     *
+     * @param id
+     * @param uri
+     * @param client
+     * @param httpRequest
+     * @param response
+     * @param gson
+     *
+     * */
     public static MangaResponse getMangaDetails(String id) throws IOException, InterruptedException {
         id = id.trim().replaceAll(" ","%20");
 

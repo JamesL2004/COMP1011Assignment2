@@ -11,7 +11,7 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("SearchMangaView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("search-manga-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("Search for Your Favourite Manga");
         stage.getIcons().add(new Image(Main.class.getResourceAsStream("imgs/icon.png")));
@@ -21,14 +21,6 @@ public class Main extends Application {
 
     public static void main(String[] args)
     {
-      /*  try {
-            APIResponse response = APIUtility.callAPI("Demon Slayer");
-            System.out.println(response.getResponse());
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        } catch (InterruptedException e) {
-            throw new RuntimeException(e);
-        }*/
         launch();
     }
 }
