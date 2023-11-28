@@ -25,9 +25,15 @@ public class SearchMangaController
         secondVbox.setVisible(false);
     }
     @FXML
-    void getDetails(ActionEvent event) throws IOException {
+    void getDetails(ActionEvent event) throws IOException, InterruptedException {
         MangaData mangaChoice = listView.getSelectionModel().getSelectedItem();
-        SceneChanger.changeScenes(event, "MangaDetailsView.fxml", mangaChoice.getId());
+        if(mangaChoice == null){
+            throw new IllegalArgumentException("You must choose a manga.");
+        }
+        else{
+            SceneChanger.changeScenes(event, "MangaDetailsView.fxml", mangaChoice.getId());
+        }
+
     }
 
     @FXML

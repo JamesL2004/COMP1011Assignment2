@@ -2,6 +2,7 @@ package com.example.comp1011assignment2;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Objects;
 
 public class MangaData {
     private String id;
@@ -26,7 +27,7 @@ public class MangaData {
     }
     public String toString()
     {
-        if(getAttributes().getYear() != 0){
+        if(!Objects.equals(getAttributes().getYear(), "0")){
             return  String.format("%s - %s",getAttributes().getYear(),getAttributes().getTitle().getEn());
         }
         else{

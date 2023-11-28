@@ -23,4 +23,17 @@ public class APIUtility {
         Gson gson = new Gson();
         return gson.fromJson(response.body(), APIResponse.class);
     }
+    public static MangaResponse getMangaDetails(String id) throws IOException, InterruptedException {
+        id = id.trim().replaceAll(" ","%20");
+
+        String uri = "https://api.mangadex.org/manga/" + id;
+
+        HttpClient client = HttpClient.newHttpClient();
+        HttpRequest httpRequest = HttpRequest.newBuilder().uri(URI.create(uri)).build();
+
+        HttpResponse<String> response = client.send(httpRequest, HttpResponse
+                .BodyHandlers.ofString());
+        Gson gson = new Gson();
+        return gson.fromJson(response.body(), MangaResponse.class);
+    }
 }

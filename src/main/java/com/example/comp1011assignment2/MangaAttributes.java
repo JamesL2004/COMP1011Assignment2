@@ -1,6 +1,5 @@
 package com.example.comp1011assignment2;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class MangaAttributes {
@@ -65,8 +64,8 @@ public class MangaAttributes {
         return status;
     }
 
-    public int getYear() {
-        return year;
+    public String getYear() {
+        return String.valueOf(year);
     }
 
     public String getContentRating() {
