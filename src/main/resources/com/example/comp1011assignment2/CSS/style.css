@@ -1,10 +1,10 @@
 .root{
     -fx-font: bold italic 15pt "Arial";
-    -fx-background-image: url("imgs/background-img.jpg_large");
+    -fx-background-image: url("../imgs/background-img.jpg_large");
     -fx-background-size: cover;
 }
 #detailsRoot{
-    -fx-background-image: url("imgs/detailsbackground.jpg");
+    -fx-background-image: url("../imgs/detailsbackground.jpg");
 }
 #titleLabel{
     -fx-text-fill: #f4f4f4;
